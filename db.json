@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "seller": [
+    {
+      "name": "Binod",
+      "email": "binood@gmail.com",
+      "password": "jbhbhjvv",
+      "id": 1
+    },
+    {
+      "name": "sameer",
+      "email": "sameer@gmail.com",
+      "password": "jbhbhjvv",
+      "id": 2
+    },
+    {
+      "name": "Binod kumar sahu",
+      "password": "sfad",
+      "email": "dvfsAcxs",
+      "id": 4
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 7
+    },
+    {
+      "name": "dc",
+      "password": "cdCds",
+      "email": "dcDSZ",
+      "id": 8
+    },
+    {
+      "name": "dc",
+      "password": "cdCds",
+      "email": "dcDSZ",
+      "id": 9
+    },
+    {
+      "name": "dacD",
+      "password": "AFAD",
+      "email": "FSVFS",
+      "id": 10
+    },
+    {
+      "name": "gbgb",
+      "password": "ngfxfg",
+      "email": "vzdvgdb",
+      "id": 11
+    },
+    {
+      "name": "vfb",
+      "password": "dffz",
+      "email": "vfbgb",
+      "id": 12
+    },
+    {
+      "name": "vfb",
+      "password": "dffz",
+      "email": "vfbgb",
+      "id": 13
+    },
+    {
+      "name": "fdvf",
+      "password": "fbdgb",
+      "email": "bzdfbdz",
+      "id": 14
+    },
+    {
+      "name": "dfbdf",
+      "password": "vbzdf",
+      "email": "zbffzd",
+      "id": 15
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
