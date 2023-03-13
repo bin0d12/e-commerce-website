@@ -3,3 +3,6 @@ export interface SignUp {
     password: String,
     email: String
 }
+
+
+

@@ -1,20 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
-import { SignUp } from '../signup-interface'
+import { LogIn } from '../interface/logIn-interface';
+import { SignUp } from '../interface/signup-interface';
 @Component({
   selector: 'app-seller-auth',
   templateUrl: './seller-auth.component.html',
-  styleUrls: ['./seller-auth.component.css']
+  styleUrls: ['./seller-auth.component.css'],
 })
 export class SellerAuthComponent implements OnInit {
-
-  constructor(private sellerService: SellerService, private router: Router) { }
-
+  constructor(private sellerService: SellerService, private router: Router) {}
+  showLogin: boolean = false;
+  authError: String = '';
   ngOnInit(): void {
+    this.sellerService.reloadSeller();
   }
   signUp(val: SignUp) {
-    console.log(val, "dncjkdsfjkdsb");
-    this.sellerService.userSignUp(val)
+    this.sellerService.userSignUp(val);
+  }
+  login(val: LogIn) {
+    this.sellerService.userLogIn(val);
+    this.sellerService.isLoginError.subscribe((isError) => {
+      if (isError) {
+        this.authError = 'email and password is incorrect';
+      }
+    });
+  }
+  // open login page
+  openLogin() {
+    this.showLogin = true;
+  }
+  // open sign in page
+  openSignUp() {
+    this.showLogin = false;
   }
 }

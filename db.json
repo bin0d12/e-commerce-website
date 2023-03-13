@@ -17,7 +17,7 @@
     {
       "name": "Binod",
       "email": "binood@gmail.com",
-      "password": "jbhbhjvv",
+      "password": "abc@123",
       "id": 1
     },
     {
@@ -33,70 +33,63 @@
       "id": 4
     },
     {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "password": "",
-      "email": "",
-      "id": 7
-    },
-    {
       "name": "dc",
       "password": "cdCds",
       "email": "dcDSZ",
       "id": 8
     },
     {
-      "name": "dc",
-      "password": "cdCds",
-      "email": "dcDSZ",
-      "id": 9
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 18
     },
     {
-      "name": "dacD",
-      "password": "AFAD",
-      "email": "FSVFS",
-      "id": 10
+      "name": "Binod kumar sahu",
+      "password": " ",
+      "email": "binod@gmail.com",
+      "id": 19
     },
     {
-      "name": "gbgb",
-      "password": "ngfxfg",
-      "email": "vzdvgdb",
-      "id": 11
+      "name": "Binod kumar sahu",
+      "password": "acc",
+      "email": "acd",
+      "id": 20
     },
     {
-      "name": "vfb",
-      "password": "dffz",
-      "email": "vfbgb",
-      "id": 12
+      "name": "Binod kumar sahu",
+      "password": "fsv",
+      "email": "sdfcds",
+      "id": 21
+    }
+  ],
+  "product": [
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "id": 1
     },
     {
-      "name": "vfb",
-      "password": "dffz",
-      "email": "vfbgb",
-      "id": 13
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "id": 7
     },
     {
-      "name": "fdvf",
-      "password": "fbdgb",
-      "email": "bzdfbdz",
-      "id": 14
-    },
-    {
-      "name": "dfbdf",
-      "password": "vbzdf",
-      "email": "zbffzd",
-      "id": 15
+      "name": "",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": "",
+      "id": 8
     }
   ],
   "profile": {
