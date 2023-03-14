@@ -1,9 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http'
-import {  SignUp } from '../signup-interface';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { LogIn } from '../interface/logIn-interface';
+import { SignUp } from '../interface/signup-interface';
 @Injectable({
   providedIn: 'root'
 })

@@ -67,7 +67,7 @@
     {
       "name": "samsung s23",
       "price": "123000",
-      "color": "blue",
+      "color": "blue///",
       "category": "mobiles",
       "description": "good product",
       "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
@@ -81,15 +81,6 @@
       "description": "good product",
       "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
       "id": 7
-    },
-    {
-      "name": "",
-      "price": "",
-      "color": "",
-      "category": "",
-      "description": "",
-      "image": "",
-      "id": 8
     }
   ],
   "profile": {
