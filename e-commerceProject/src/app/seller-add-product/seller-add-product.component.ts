@@ -15,15 +15,10 @@ export class SellerAddProductComponent implements OnInit {
   }
   addProductsData(value: product){
     this.productService.addProduct(value).subscribe((payLoad:any) => {
-      console.log(payLoad, "payloadddddddddddddddddddddd");
       if(payLoad) {
         this.addProductMessage = "product add successfully"
       }
       setTimeout(() => (this.addProductMessage = undefined ), 3000)      
     })   
-      
-    // })
-    console.log(value,"its working");
-    
   }
 }

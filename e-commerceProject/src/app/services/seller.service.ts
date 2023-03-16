@@ -30,7 +30,6 @@ export class SellerService {
     }
   }
   userLogIn(data: LogIn){
-    console.log(data, "datatatat");
     this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, 
     {observe: 'response'}
     ).subscribe((result: any) => {

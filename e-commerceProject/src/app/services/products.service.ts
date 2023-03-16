@@ -24,9 +24,16 @@ export class ProductsService {
     return this.http.get<product>(`${this.apiUrl}/product/${id}`)
   }
   updateProduct(product: product){
-    console.log(product, "oiddddddddd");
-    
     return this.http.put(`${this.apiUrl}/product/${product.id}`, product)
-    
+  }
+  popularProduct(){
+    return this.http.get<product[]>(`${this.apiUrl}/product?_limit=4`)
+    // return this.http.get<product[]>("http://localhost:3000/product?_limit=4")
+  }
+  trendyProduct(){
+    return this.http.get<product[]>(`${this.apiUrl}/product?_limit=8`)
+  }
+  searchProduct(query: string){
+    return this.http.get<product[]>(`${this.apiUrl}/product?q=${query}`)
   }
 }

@@ -81,6 +81,68 @@
       "description": "good product",
       "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
       "id": 7
+    },
+    {
+      "name": "lenovo",
+      "price": "80000",
+      "color": "black",
+      "category": "laptop",
+      "description": "leptop",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "id": 8
+    },
+    {
+      "name": "moto g",
+      "price": "39999",
+      "color": "blue",
+      "category": "mobile",
+      "description": "motorla mobiles",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "id": 9
+    },
+    {
+      "name": "lenovo",
+      "price": "120000",
+      "color": "black",
+      "category": "laptop",
+      "description": "lenovo product",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "id": 10
+    },
+    {
+      "name": "lenovo",
+      "price": "120000",
+      "color": "black",
+      "category": "laptop",
+      "description": "lenovo product",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "id": 11
+    },
+    {
+      "name": "lenovo",
+      "price": "120000",
+      "color": "black",
+      "category": "laptop",
+      "description": "lenovo product",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "id": 12
+    },
+    {
+      "name": "lenovo",
+      "price": "120000",
+      "color": "black",
+      "category": "laptop",
+      "description": "lenovo product",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "id": 13
+    }
+  ],
+  "user": [
+    {
+      "name": "binod",
+      "email": "binod@gmail.com",
+      "password": "abc@123",
+      "id": 1
     }
   ],
   "profile": {
