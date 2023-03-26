@@ -143,6 +143,12 @@
       "email": "binod@gmail.com",
       "password": "abc@123",
       "id": 1
+    },
+    {
+      "name": "sujit",
+      "email": "sujit@gmail.com",
+      "password": "abc@123",
+      "id": 2
     }
   ],
   "profile": {

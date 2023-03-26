@@ -11,19 +11,31 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { SearchComponent } from './search/search.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "seller-auth", component: SellerAuthComponent},
+  { path: '', component: HomeComponent },
+  { path: 'seller-auth', component: SellerAuthComponent },
   // {path: '**', component: NotFoundComponent},
-  {path: "seller-home", component: SellerHomeComponent, canActivate:[AuthRoutingGuard]},
-  {path: "seller-add-product", component: SellerAddProductComponent, canActivate: [AuthRoutingGuard]},
-  {path: "seller-update-product/:id", component: SellerUpdateProductComponent, canActivate: [AuthRoutingGuard]},
-  {path: 'search/:query', component: SearchComponent},
-  {path: "details/:productId", component: ProductDetailsComponent},
-  {path: 'user-auth', component: UserAuthComponent}
+  {
+    path: 'seller-home',
+    component: SellerHomeComponent,
+    canActivate: [AuthRoutingGuard],
+  },
+  {
+    path: 'seller-add-product',
+    component: SellerAddProductComponent,
+    canActivate: [AuthRoutingGuard],
+  },
+  {
+    path: 'seller-update-product/:id',
+    component: SellerUpdateProductComponent,
+    canActivate: [AuthRoutingGuard],
+  },
+  { path: 'search/:query', component: SearchComponent },
+  { path: 'details/:productId', component: ProductDetailsComponent },
+  { path: 'user-auth', component: UserAuthComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

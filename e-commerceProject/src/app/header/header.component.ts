@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   sellerName: string = '';
   searchResult: undefined | product[];
   userName: string = '';
+  cartItem = 0
   constructor(private route: Router, private productService: ProductsService) {}
 
   ngOnInit(): void {
@@ -35,6 +36,13 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+    let cartData = localStorage.getItem('localCart');
+    if(cartData){
+      this.cartItem = JSON.parse(cartData).length
+    }
+    this.productService.cartDataAsynchronous.subscribe((items) => {
+      this.cartItem = items.length
+    }) 
   }
   logOut() {
     localStorage.removeItem('seller');
