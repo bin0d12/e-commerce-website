@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { cart } from '../interface/cart-interface';
 import { product } from '../interface/product-interface';
 
 @Injectable({
@@ -56,5 +57,8 @@ export class ProductsService {
       localStorage.setItem('localCart', JSON.stringify(items))
       this.cartDataAsynchronous.emit(items)
     }
+  }
+  addToCart(cartData: cart){
+    return this.http.post(`${this.apiUrl}/cart`, cartData)
   }
 }

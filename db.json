@@ -151,6 +151,32 @@
       "id": 2
     }
   ],
+  "cart": [
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue///",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 1
+    },
+    {
+      "name": "lenovo",
+      "price": "80000",
+      "color": "black",
+      "category": "laptop",
+      "description": "leptop",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "quantity": 5,
+      "userId": 1,
+      "productId": 8,
+      "id": 2
+    }
+  ],
   "profile": {
     "name": "typicode"
   }

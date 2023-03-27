@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { cart } from '../interface/cart-interface';
 import { product } from '../interface/product-interface';
 import { ProductsService } from '../services/products.service';
 
@@ -48,14 +49,26 @@ export class ProductDetailsComponent implements OnInit {
     if (this.productDetails) {
       this.productDetails.quantity = this.productQty;
       if (!localStorage.getItem('user')) {
-        console.log(this.productDetails, 'khdsjkghjg');
         this.productService.localAddToCart(this.productDetails);
         this.removeCart = true;
+      } else {
+        let user = localStorage.getItem('user');
+        let userId = user && JSON.parse(user).id;
+        let cartData: cart = {
+          ...this.productDetails,
+          userId,
+          productId: this.productDetails.id,
+        };
+        delete cartData.id;
+        this.productService.addToCart(cartData).subscribe((payLoad) => {
+          alert('product add sucessufully');
+          console.log(payLoad);
+        });
       }
     }
   }
   removeToCart(productId: number) {
     this.productService.removeItemFromCart(productId);
-    this.removeCart = false
+    this.removeCart = false;
   }
 }
