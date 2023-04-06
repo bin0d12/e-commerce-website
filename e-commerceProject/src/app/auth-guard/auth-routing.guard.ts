@@ -22,7 +22,7 @@ export class AuthRoutingGuard implements CanActivate {
     | boolean
     | UrlTree {
     if (localStorage.getItem('seller')) {
-      return true;
+      return false;
     }
     return this.sellerServices.isSellerLoggedIn;
   }

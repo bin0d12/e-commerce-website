@@ -19,6 +19,8 @@ export class SellerUpdateProductComponent implements OnInit {
     productId && this.productServices.getProduct(productId).subscribe((data) => {
       this.productData = data
     })
+    debugger
+    this.productServices.sendData("binod")
   }
   addProductsData(val: product){
     if(this.productData){

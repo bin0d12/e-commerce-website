@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -18,7 +18,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
-
+import { InterInterceptor } from './inter.interceptor';
+import { AuthRoutingGuard } from './auth-guard/auth-routing.guard';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,12 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
     FontAwesomeModule,
     NgbModule
   ],
-  providers: [],
+  providers: [AuthRoutingGuard, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: InterInterceptor,
+    multi: true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

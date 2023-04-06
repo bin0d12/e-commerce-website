@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { product } from '../interface/product-interface';
 import { ProductsService } from '../services/products.service';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +15,13 @@ export class HeaderComponent implements OnInit {
   sellerName: string = '';
   searchResult: undefined | product[];
   userName: string = '';
-  cartItem = 0
-  constructor(private route: Router, private productService: ProductsService) {}
+  cartItem = 0;
+  users: any;
+  constructor(
+    private route: Router,
+    private productService: ProductsService,
+    private userService: UserService
+  ) {}
 
   ngOnInit(): void {
     this.route.events.subscribe((val: any) => {
@@ -23,8 +29,9 @@ export class HeaderComponent implements OnInit {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           // get the seller name
           let sellerNameStore = localStorage.getItem('seller');
-          let sellerNameGet = sellerNameStore && JSON.parse(sellerNameStore).body[0];
-          this.sellerName = sellerNameGet.name; // here you will get the seller name
+          // let sellerNameGet =
+          //   // sellerNameStore && JSON.parse(sellerNameStore).body[0];
+          // this.sellerName = sellerNameGet.name; // here you will get the seller name
           this.menuType = 'seller';
         } else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
@@ -37,12 +44,12 @@ export class HeaderComponent implements OnInit {
       }
     });
     let cartData = localStorage.getItem('localCart');
-    if(cartData){
-      this.cartItem = JSON.parse(cartData).length
+    if (cartData) {
+      this.cartItem = JSON.parse(cartData).length;
     }
     this.productService.cartDataAsynchronous.subscribe((items) => {
-      this.cartItem = items.length
-    }) 
+      this.cartItem = items.length;
+    });
   }
   logOut() {
     localStorage.removeItem('seller');

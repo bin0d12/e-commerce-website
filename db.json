@@ -61,18 +61,15 @@
       "password": "fsv",
       "email": "sdfcds",
       "id": 21
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 22
     }
   ],
   "product": [
-    {
-      "name": "samsung s23",
-      "price": "123000",
-      "color": "blue///",
-      "category": "mobiles",
-      "description": "good product",
-      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
-      "id": 1
-    },
     {
       "name": "oneplus 11r",
       "price": "40000",
@@ -81,15 +78,6 @@
       "description": "good product",
       "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
       "id": 7
-    },
-    {
-      "name": "lenovo",
-      "price": "80000",
-      "color": "black",
-      "category": "laptop",
-      "description": "leptop",
-      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
-      "id": 8
     },
     {
       "name": "moto g",
@@ -107,34 +95,34 @@
       "category": "laptop",
       "description": "lenovo product",
       "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
-      "id": 10
-    },
-    {
-      "name": "lenovo",
-      "price": "120000",
-      "color": "black",
-      "category": "laptop",
-      "description": "lenovo product",
-      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
-      "id": 11
-    },
-    {
-      "name": "lenovo",
-      "price": "120000",
-      "color": "black",
-      "category": "laptop",
-      "description": "lenovo product",
-      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
-      "id": 12
-    },
-    {
-      "name": "lenovo",
-      "price": "120000",
-      "color": "black",
-      "category": "laptop",
-      "description": "lenovo product",
-      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
       "id": 13
+    },
+    {
+      "name": "reebok shoes",
+      "price": "5999",
+      "color": "gray/white",
+      "category": "footwear",
+      "description": "this is fit and memory foam",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/585e2cd2-4f2a-408c-a8ba-f89952cdf332/revolution-6-next-nature-road-running-shoes-NC0P7k.png",
+      "id": 14
+    },
+    {
+      "name": "spykar jeans",
+      "price": "2999",
+      "color": "blue",
+      "category": "jeans",
+      "description": "this is jeans pant",
+      "image": "https://www.shutterstock.com/image-photo/jeans-on-background-blue-lie-260nw-1189112893.jpg",
+      "id": 15
+    },
+    {
+      "name": "teddy bear",
+      "price": "1999",
+      "color": "light pink",
+      "category": "teddy",
+      "description": "this is a teddy bear",
+      "image": "https://images.pexels.com/photos/12211/pexels-photo-12211.jpeg",
+      "id": 16
     }
   ],
   "user": [
@@ -149,6 +137,18 @@
       "email": "sujit@gmail.com",
       "password": "abc@123",
       "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
     }
   ],
   "cart": [
@@ -295,6 +295,210 @@
       "productId": 7,
       "userId": null,
       "id": 12
+    },
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue///",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 13
+    },
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue///",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "productId": 1,
+      "userId": null,
+      "id": 14
+    },
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue///",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 1,
+      "id": 15
+    },
+    {
+      "name": "samsung s23",
+      "price": "123000",
+      "color": "blue///",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "userId": 2,
+      "productId": 1,
+      "id": 16
+    },
+    {
+      "name": "reebok shoes",
+      "price": "5999",
+      "color": "gray/white",
+      "category": "footwear",
+      "description": "this is fit and memory foam",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,b_rgb:f5f5f5/585e2cd2-4f2a-408c-a8ba-f89952cdf332/revolution-6-next-nature-road-running-shoes-NC0P7k.png",
+      "quantity": 1,
+      "productId": 14,
+      "userId": null,
+      "id": 17
+    },
+    {
+      "name": "moto g",
+      "price": "39999",
+      "color": "blue",
+      "category": "mobile",
+      "description": "motorla mobiles",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "productId": 9,
+      "userId": null,
+      "id": 18
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "productId": 7,
+      "userId": null,
+      "id": 19
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "productId": 7,
+      "userId": null,
+      "id": 20
+    },
+    {
+      "name": "moto g",
+      "price": "39999",
+      "color": "blue",
+      "category": "mobile",
+      "description": "motorla mobiles",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "productId": 9,
+      "userId": null,
+      "id": 21
+    },
+    {
+      "name": "lenovo",
+      "price": "120000",
+      "color": "black",
+      "category": "laptop",
+      "description": "lenovo product",
+      "image": "https://www.lenovo.com/medias/lenovo-laptop-ideapad-s340-intel-14-02.jpg?context=bWFzdGVyfHJvb3R8ODU3ODB8aW1hZ2UvanBnfGg2Yy9oNGIvOTkxMTM5NzMxODY4Ni5qcGd8ODAzZWFhYjViNjg0NTRiOTJlNGVkMjlhYTRhNDljMmE1OTk5MDhmNzYwNWMzN2M2ZjExYWE4NWEyNDI5MDljZg",
+      "quantity": 1,
+      "productId": 13,
+      "userId": null,
+      "id": 22
+    },
+    {
+      "name": "moto g",
+      "price": "39999",
+      "color": "blue",
+      "category": "mobile",
+      "description": "motorla mobiles",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 9,
+      "id": 23
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 7,
+      "id": 24
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "productId": 7,
+      "userId": null,
+      "id": 25
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "productId": 7,
+      "userId": null,
+      "id": 26
+    },
+    {
+      "name": "moto g",
+      "price": "39999",
+      "color": "blue",
+      "category": "mobile",
+      "description": "motorla mobiles",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzecins/gallery/in-galaxy-s23-s911-sm-s911bzecins-thumb-535265855?imwidth=480",
+      "quantity": 1,
+      "productId": 9,
+      "userId": null,
+      "id": 27
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "productId": 7,
+      "userId": null,
+      "id": 28
+    },
+    {
+      "name": "oneplus 11r",
+      "price": "40000",
+      "color": "black",
+      "category": "mobiles",
+      "description": "good product",
+      "image": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2023/02/06/2571026-oneplus-11-5g.png",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 7,
+      "id": 29
     }
   ],
   "profile": {

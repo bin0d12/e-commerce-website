@@ -30,6 +30,8 @@ export class ProductDetailsComponent implements OnInit {
     console.log(cartData, 'dattttt');
     if (productId && cartData) {
       let items = JSON.parse(cartData);
+      console.log(items, "items");
+      
       items = items.filter((item: product) => productId === item.id.toString());
       if (items.length) {
         this.removeCart = true;
@@ -70,5 +72,10 @@ export class ProductDetailsComponent implements OnInit {
   removeToCart(productId: number) {
     this.productService.removeItemFromCart(productId);
     this.removeCart = false;
+  }
+  subjectPractice(value: any){ debugger
+    this.productService.getSubject.subscribe((data) => {
+      console.log(data, "data");
+    })
   }
 }
