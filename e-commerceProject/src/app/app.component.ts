@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from './services/user.service';
+import { SellerService } from './services/seller.service';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,13 @@ import { UserService } from './services/user.service';
 })
 export class AppComponent implements OnInit{
 users: any
-
-  ngOnInit(): void {
-    
-  }
-  constructor(private userService: UserService){}
+// constructor(){}
+ 
+  constructor(private userService: UserService, private sellerService: SellerService){}
   title = 'e-commerceProject';
+
+ngOnInit(): void {
+  // this.sellerService.reloadSeller()
+  
+}
 }

@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { InterInterceptor } from './inter.interceptor';
 import { AuthRoutingGuard } from './auth-guard/auth-routing.guard';
+import { TrmplateFormComponent } from './trmplate-form/trmplate-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { AuthRoutingGuard } from './auth-guard/auth-routing.guard';
     SearchComponent,
     FooterComponent,
     UserAuthComponent,
+    TrmplateFormComponent,
   ],
   imports: [
     BrowserModule,

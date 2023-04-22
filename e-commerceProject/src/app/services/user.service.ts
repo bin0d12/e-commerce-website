@@ -17,7 +17,10 @@ export class UserService {
   invalidUserAuth = new EventEmitter<boolean>(false);
   constructor(private http: HttpClient, private router: Router) {}
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' , 
+    'Authorization': `Bearer ${localStorage.getItem('token')}`
+  },
+    ),
     // withCredentials: true
     // observe: 'response' as 'response'
   };
@@ -25,10 +28,15 @@ export class UserService {
   userSignUp(user:any): Observable<any> {
     return this.http.post(`${this.apiUrl}/userDataStore`, user);
   }
-  userLogIn(user: any) : Observable<any>{
-    console.log(user, "userrrrrrrrrrrrr");
-    
-    return this.http.post(`${this.apiUrl}/authCheck`, user)
+  userLogIn(user: any){
+    return this.http.post(`${this.apiUrl}/authCheck`, user, {observe: "body"}).subscribe((res) => {
+      // if (res && res.?.length) {
+        let token = JSON.stringify(res)
+              this.invalidUserAuth.emit(false);
+              // localStorage.setItem('token', token )
+              localStorage.setItem('user', JSON.stringify(res));
+              this.router.navigate(['/']);
+    })
     // return this.http
     //   .get<SignUp[]>(
     //     `${this.userApiUrl}/user?email=${user.email}&password=${user.password}`,

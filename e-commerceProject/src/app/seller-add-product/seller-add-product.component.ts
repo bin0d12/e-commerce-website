@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { product } from '../interface/product-interface';
 import { ProductsService } from '../services/products.service';
+import { JwtDecodeOptions } from 'jwt-decode';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -8,7 +9,8 @@ import { ProductsService } from '../services/products.service';
   styleUrls: ['./seller-add-product.component.css']
 })
 export class SellerAddProductComponent implements OnInit {
-  addProductMessage: string | undefined
+  addProductMessage: string | undefined;
+  selectedFile: File | undefined;
   constructor(private productService: ProductsService) { }
 
   ngOnInit(): void {
@@ -20,5 +22,8 @@ export class SellerAddProductComponent implements OnInit {
       }
       setTimeout(() => (this.addProductMessage = undefined ), 3000)      
     })   
+  }
+  onFileSelected(event: { target: { files: (File | undefined)[]; }; }): void {
+    this.selectedFile = event.target.files[0];
   }
 }

@@ -5,6 +5,7 @@ import { product } from '../interface/product-interface';
 import { SignUp } from '../interface/signup-interface';
 import { ProductsService } from '../services/products.service';
 import { UserService } from '../services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-auth',
@@ -16,7 +17,8 @@ export class UserAuthComponent implements OnInit {
   authError: string = '';
   constructor(
     private userService: UserService,
-    private productService: ProductsService
+    private productService: ProductsService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -33,14 +35,29 @@ export class UserAuthComponent implements OnInit {
     });
   }
   userLogIn(data: LogIn) {
-    console.log("this is calling data", data);
     let body = {
       email: data.email,
       password: data.password
     }
-    this.userService.userLogIn(body).subscribe((data) => {
-      console.log(data);
-    });
+    // this.userService.userLogIn(body).subscribe((data) => {
+      this.userService.userLogIn(body)      
+      // .subscribe((data) => {
+
+      //   let formatedData;
+      //   if (typeof data === 'string') {
+      //     formatedData = JSON.parse(data);
+      //   } else {
+      //     formatedData = data;
+      //   }
+      //   console.log(formatedData.response.name, "formedDatatatat");
+        
+      //   // use the formatedData object here
+      // });
+    // this.userService.userLogIn(body).subscribe((data) => {
+    //   let formatedData = JSON.parse(data)
+
+    //   this.router.navigate(['/']);
+    // });
     this.userService.invalidUserAuth.subscribe((result) => {
       if (result) {
         this.authError = 'please enter valid user details';
@@ -48,9 +65,6 @@ export class UserAuthComponent implements OnInit {
         this.localCartToRemoteCart();
       }
     });
-    // this.userService.userLogIn(data).subscribe((payLoad) =>{
-
-    // })
   }
   openLogin() {
     this.showLogin = true;

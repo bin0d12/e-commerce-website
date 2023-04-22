@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SellerService {
+  private apiUrl = 'http://localhost:3005/api';
   isSellerLoggedIn = new BehaviorSubject<boolean>(false)
   isLoginError = new EventEmitter<boolean>(false)
   private backendApiUrl = `${environment.apiUrl}/sellerApi`
@@ -25,7 +26,8 @@ export class SellerService {
   //   return true;
   // }
   userSignUp(data: SignUp){
-    this.http.post(`${this.backendApiUrl}/sellerSignUpData`, data, {observe: "body"})
+    this.http.post(`${this.backendApiUrl}
+    /sellerSignUpData`, data, {observe: "body"})
    .subscribe((res) => {
      this.isSellerLoggedIn.next(true)
      // it stored the user dat to check the user login or not
@@ -43,16 +45,30 @@ export class SellerService {
     }
   }
   userLogIn(data: LogIn){
-    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, 
+    return this.http.post(`${this.backendApiUrl}/sellerLoginData`, data,
+    // this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, 
     {observe: 'response'}
     ).subscribe((result: any) => {
-      if(result && result.body && result.body.length){
+      // if(result && result.body && result.body.length){
         localStorage.setItem('seller', JSON.stringify(result))
       // when it is true it will redirect to seller home page
-      this.router.navigate(['/'])
-      } else {
-        this.isLoginError.emit(true)
-      }
+      this.router.navigate(['seller-home'])
+      // } else {
+      //   this.isLoginError.emit(true)
+      // }
     })
   }
+  // userLogIn(data: LogIn){
+  //   this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`, 
+  //   {observe: 'response'}
+  //   ).subscribe((result: any) => {
+  //     if(result && result.body && result.body.length){
+  //       localStorage.setItem('seller', JSON.stringify(result))
+  //     // when it is true it will redirect to seller home page
+  //     this.router.navigate(['/'])
+  //     } else {
+  //       this.isLoginError.emit(true)
+  //     }
+  //   })
+  // }
 }

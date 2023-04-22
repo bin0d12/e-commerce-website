@@ -10,6 +10,7 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SearchComponent } from './search/search.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { TrmplateFormComponent } from './trmplate-form/trmplate-form.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'seller-auth', component: SellerAuthComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'search/:query', component: SearchComponent },
   { path: 'details/:productId', component: ProductDetailsComponent },
   { path: 'user-auth', component: UserAuthComponent },
+  {path:"template-form", component: TrmplateFormComponent}
 ];
 
 @NgModule({

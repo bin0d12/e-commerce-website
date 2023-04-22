@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
@@ -16,12 +16,18 @@ export class ProductsService {
   constructor(private router: Router, private http: HttpClient) {
   }
   apiUrl = 'http://localhost:3000';
+  private BackendApiUrl = 'http://localhost:3005/products';
+
   cartDataAsynchronous = new EventEmitter<product[] | []>();
   addProduct(data: product) {
-    return this.http.post(`${this.apiUrl}/product`, data);
+    return this.http.post(`${this.BackendApiUrl}/addProducts`, data)
+    // return this.http.post(`${this.apiUrl}/product`, data);
   }
   productList():Observable<any> {
-    return this.http.get<product[]>(`${this.apiUrl}/product`);
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`)
+    return this.http.get<product[]>(`${this.BackendApiUrl}/productList`, {headers});
+    // return this.http.get<product[]>(`${this.apiUrl}/product`);
   }
   deleteProduct(id: number) {
     return this.http.delete(`${this.apiUrl}/product/${id}`);
@@ -59,7 +65,6 @@ export class ProductsService {
     if (cartData) {
       let items: product[] = JSON.parse(cartData);
       items = items.filter((item: product) => productId !== item.id);
-      console.log(items, 'items');
       localStorage.setItem('localCart', JSON.stringify(items));
       this.cartDataAsynchronous.emit(items);
     }
@@ -68,21 +73,17 @@ export class ProductsService {
     return this.http.post(`${this.apiUrl}/cart`, cartData);
   }
   getCartList(userId: number) {
-    console.log(userId, "useriddddddddd");
-    
     return this.http
       .get<product[]>(`${this.apiUrl}/cart?userId=` + userId, {
         observe: 'response',
       })
       .subscribe((result) => {
-        console.log(result, 'resulttttt');
-        
         if (result && result.body) {
           this.cartDataAsynchronous.emit(result.body);
         }
       });
   }
-  sendData(val: any){ debugger
+  sendData(val: any){ 
    this.subject.next(val)
   }
   GetData(){

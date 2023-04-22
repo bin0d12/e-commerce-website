@@ -20,7 +20,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private route: Router,
     private productService: ProductsService,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -29,14 +30,23 @@ export class HeaderComponent implements OnInit {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           // get the seller name
           let sellerNameStore = localStorage.getItem('seller');
-          // let sellerNameGet =
-          //   // sellerNameStore && JSON.parse(sellerNameStore).body[0];
-          // this.sellerName = sellerNameGet.name; // here you will get the seller name
+          let sellerFormatData;
+          // if(typeof sellerNameStore === 'string'){
+          //   sellerFormatData =JSON.parse(sellerNameStore)
+          // } else {
+          //   sellerFormatData = sellerNameStore
+          // }
+          // this.sellerName = sellerFormatData.body.response.name
           this.menuType = 'seller';
         } else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
-          let userData = userStore && JSON.parse(userStore);
-          this.userName = userData.name;
+          let formatedData;
+          if (typeof userStore === 'string') {
+            formatedData = JSON.parse(userStore);
+          } else {
+            formatedData = userStore;
+          }
+          this.userName = formatedData.response.name;
           this.menuType = 'user';
         } else {
           this.menuType = 'default';

@@ -13,7 +13,7 @@
     <!-- sign up end -->
     <!-- login start -->
     <div *ngIf="showLogin" class="logIn">
-        <h1>Login page</h1>
+        <h1>Seller Login page</h1>
         <p class="authError">{{authError}}</p>
         <form #sellerLogin="ngForm" (ngSubmit) = "login(sellerLogin.value)" class="common-form">
             <input class="form-input" type="text" ngModel name= "email"placeholder="user name/ email">

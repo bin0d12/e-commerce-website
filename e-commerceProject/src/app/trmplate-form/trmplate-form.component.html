@@ -1,0 +1,9 @@
+<form #products="ngForm" (ngSubmit)="allProducts(products.value)">
+    <p>product name</p>
+    <input type="text" name="pName" ngModel>
+    <p>Product Description</p>
+    <input type="text" name="cName" ngModel>
+    <p>product Price</p>
+    <input type="text" name="dName" ngModel>
+    <input type="submit">
+</form>
